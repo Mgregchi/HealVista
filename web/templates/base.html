@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HealVista - Bridging Healthcare Accessibility</title>
+    <!-- Add your CSS links or other head content here -->
+</head>
+
+<body>
+    {% block content %}{% endblock %}
+
+    <a href="{% url 'accounts:signin' %}">Signin</a>
+    <a href="{% url 'accounts:signup' %}">Signup</a>
+    
+    <a href="{% url 'accounts:signout' %}">Logout</a>
+</body>
+
+</html>

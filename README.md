@@ -40,9 +40,11 @@ The delivery market is expected to grow significantly due to the increasing popu
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/mgregchi/healvista.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Apply migrations: `python manage.py migrate`
-4. Run the development server: `python manage.py runserver`
+2. Change into the project directory: `cd web`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Apply migrations: `python manage.py migrate`
+5. Run tests: `python manage.py test`
+6. Run the development server: `python manage.py runserver`
 
 ## Contributing
 
