@@ -1,0 +1,110 @@
+@import "../Variables/Variables.scss";
+
+
+.payment__plan {
+    padding: 10rem 0 4rem 0;
+
+    &__header {
+        font-family: 'Roboto';
+    }
+
+    &__header1 {
+        color: $border-color_1;
+        text-transform: capitalize;
+        font-weight: 500;
+        letter-spacing: 0.12px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    &__header2 {
+        color: $color_7;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.12px;
+    }
+
+    &__subhead {
+        color: $color_7;
+        letter-spacing: 0.12px;
+
+    }
+
+    &__cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+}
+
+.custom {
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: $background-color_4;
+        border: 1px solid $border-color_1;
+        box-shadow: 0px 4px 30px 1px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        padding: 2rem;
+        height: 350px !important;
+        align-items: center;
+
+
+    }
+
+    &__body {
+        color: $color_7;
+    }
+
+    &__img {
+        width: 50px;
+        height: 50px;
+        align-self: center !important;
+    }
+
+    &__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .custom {
+        padding: 0 2rem;
+
+        &__card {
+            height: 350px !important;
+        }
+    }
+
+}
+
+@media (max-width: 330px) {
+    .custom__card {
+        height: 100% !important;
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment__plan__header1 {
+        font-size: 1rem;
+    }
+
+    .payment__plan___header2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 550px) {
+    .payment__plan__cards {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}

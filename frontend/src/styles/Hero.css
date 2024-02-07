@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500&family=Oxanium&family=Roboto:wght@300;400;500;700&display=swap");
+.hero {
+  height: 100vh;
+  position: relative;
+  background-image: url(../src/assets/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.hero__text {
+  color: #333333;
+}
+.hero__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 63px;
+}
+.hero__title span {
+  color: #F5F5F5;
+}
+.hero__subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+.hero__image {
+  position: absolute;
+  bottom: 2px !important;
+  right: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    height: auto !important;
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+  .hero__image {
+    position: relative;
+    text-align: center !important;
+  }
+  .hero__subtitle {
+    width: 100% !important;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+  .hero__image {
+    position: absolute;
+    bottom: 42px !important;
+    right: 0;
+  }
+  .banner-bottom-card {
+    bottom: -7% !important;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .hero__title {
+    text-align: center;
+  }
+  .hero__text {
+    width: 100%;
+  }
+  .hero__subtitle {
+    width: 100% !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+  .hero__image {
+    position: relative;
+    bottom: 42px !important;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .banner-bottom-card {
+    bottom: 12% !important;
+  }
+}
+.banner-bottom-card {
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  border-radius: 1rem;
+  position: absolute;
+  gap: 1rem;
+  justify-content: center;
+  bottom: -12%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.banner-bottom-card .Radio__Buttons {
+  color: #FFFFFF !important;
+}
+.banner-bottom-card .search__input {
+  color: #FFFFFF !important;
+  font-style: italic;
+}
+.banner-bottom-card .search__control {
+  background: #009688;
+  border: 1px solid #FF5722;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+.banner-bottom-card .search__control:focus {
+  background: #009688;
+  border: 1px solid #FF5722;
+  box-shadow: none;
+  color: #FFFFFF;
+}
+.banner-bottom-card .search__control::-moz-placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: small;
+  font-style: italic;
+}
+.banner-bottom-card .search__control::placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: small;
+  font-style: italic;
+}
+.banner-bottom-card input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #FF5722;
+  outline: none !important;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+.banner-bottom-card input[type=radio]:checked {
+  background-color: #FF5722;
+  border-color: #FF5722;
+  box-shadow: none !important;
+}
+.banner-bottom-card .form-check-input:focus {
+  border-color: #FF5722 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.banner-bottom-card .hero__card {
+  background: #009688;
+  padding: 1rem;
+}
+.banner-bottom-card .vertical__line {
+  border-left: 1px solid #FFFFFF !important;
+  height: 100%;
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .banner-bottom-card {
+    width: 100%;
+    bottom: -15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .banner-bottom-card {
+    width: 100%;
+    bottom: 0%;
+  }
+}
+@media (min-width: 1349px) {
+  .hero__image {
+    position: absolute;
+    bottom: -4px !important;
+    right: 0 !important;
+  }
+  .banner-bottom-card {
+    bottom: -13% !important;
+  }
+}
+@media (max-width: 768px) {
+  .banner-bottom-card {
+    width: 100%;
+  }
+  .search__input {
+    margin-bottom: 1rem;
+  }
+  .vertical-line {
+    display: none;
+  }
+}
+@media (max-width: 330px) {
+  .banner-bottom-card {
+    padding: 2rem 0 2rem 0;
+  }
+  .hero__card {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .banner-bottom-card {
+    bottom: 0% !important;
+  }
+}/*# sourceMappingURL=Hero.css.map */

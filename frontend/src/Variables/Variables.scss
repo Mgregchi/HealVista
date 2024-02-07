@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500&family=Oxanium&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+$color_1: #33ABA0;
+$color_2: black;
+$color_3: #FF794E;
+$color_4: #EBEBEB;
+$color_5: #E6F5F3;
+$color_6: #FFEEE9;
+$color_7: #333333;
+$color_8: #FFFFFF;
+$font-family_1: 'Roboto';
+$border-color_1: #009688;
+$main-background-color: #F5F5F5;
+$background-color_1: white;
+$background-color_2: #FF794E;
+$background-color_3: #FF5722;
+$background-color_4: #B0DEDA;
+$footer_background: linear-gradient(94deg, #003F39 36.12%, #003F39 56.41%, #003F39 76.7%);
+
+
+@mixin buttonStyle($background, $color, $fontSize, $fontWeight) {
+    padding: .6rem 3.5rem;
+    background: $background ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 14px;
+    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    font-size: $fontSize;
+
+    a {
+        color: $color_6;
+        font-weight: $fontWeight;
+        letter-spacing: 0.032px;
+        text-decoration: none;
+    }
+}

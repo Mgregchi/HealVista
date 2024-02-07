@@ -1,9 +1,17 @@
-import React from 'react'
+import Booking from "../components/Booking";
+import Donate from "../components/Donate";
+import Hero from "../components/Hero";
+import PaymentPlan from "../components/PaymentPlan";
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
-  )
-}
+    <div>
+      <Hero />
+      <PaymentPlan />
+      <Booking />
+      <Donate />
+    </div>
+  );
+};
 
-export default LandingPage
+export default LandingPage;

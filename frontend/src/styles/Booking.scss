@@ -1,0 +1,138 @@
+@import "../Variables/Variables.scss";
+
+
+.booking {
+    padding: 4rem 0 4rem 0;
+    position: relative;
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        color: $border-color_1;
+        margin-bottom: 2rem;
+
+    }
+
+    &__title {
+        color: $color_7 ;
+        text-transform: uppercase;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 52px;
+    }
+
+    &__text {
+        color: $color_7;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 6rem;
+    }
+
+    &__cta {
+        position: relative;
+        z-index: 2;
+        @include buttonStyle($background-color_3, $color_6, 20px, 400)
+    }
+
+    &__line {
+        position: absolute;
+        z-index: 1;
+        top: 26.5rem;
+        left: 24rem;
+    }
+
+    &__line2 {
+        position: absolute;
+        bottom: 4rem;
+        right: 29.3rem;
+    }
+}
+
+@media (max-width:768px) {
+    .booking {
+
+        &__row {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+
+        &__image {
+            flex-basis: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        &__text {
+
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 2rem;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__cta {
+            text-align: center;
+            justify-content: center;
+        }
+
+    }
+
+
+}
+
+@media (max-width:992px) {
+
+    .booking {
+        &__line {
+            display: none;
+        }
+
+        &__line2 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+
+    .booking {
+        &__line {
+            top: 25rem;
+            left: 18rem;
+        }
+
+        &__line2 {
+            bottom: 5.5rem;
+            right: 20rem;
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+    .booking {
+        &__line {
+            top: 26rem;
+            left: 21rem;
+        }
+
+        &__line2 {
+            bottom: 4rem;
+            right: 27rem;
+        }
+    }
+}

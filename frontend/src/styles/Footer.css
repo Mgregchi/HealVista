@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500&family=Oxanium&family=Roboto:wght@300;400;500;700&display=swap");
+.footer {
+  background: linear-gradient(94deg, #003F39 36.12%, #003F39 56.41%, #003F39 76.7%);
+  color: #EBEBEB;
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 500;
+  align-items: center;
+}
+.footer__info {
+  align-items: center;
+}
+.footer__socials p {
+  font-size: 14px;
+}
+.footer .social__icon {
+  color: #EBEBEB;
+  background-color: #FF794E;
+  margin-right: 1rem;
+  padding: 0.3rem;
+  border-radius: 14px;
+}
+.footer .quicklinks {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 2;
+}
+.footer .quicklinks li a {
+  text-decoration: none;
+  color: #EBEBEB;
+  font-size: 14px;
+}
+.footer__subscription p {
+  font-size: 14px;
+}
+.footer__subscription h5 {
+  margin-bottom: 2.5rem;
+}
+.footer .newsletter__form {
+  background-color: inherit;
+  font-size: 0.8rem;
+  color: #EBEBEB;
+  border: 1px solid #009688;
+  border-radius: 20px 0 0 20px;
+  padding-right: 0;
+}
+.footer .newsletter__form:focus {
+  background-color: inherit;
+  color: #EBEBEB;
+  border-color: #009688;
+  outline: 0;
+  box-shadow: none;
+  border-right: none;
+}
+.footer .newsletter__form::-moz-placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: small;
+}
+.footer .newsletter__form::placeholder {
+  color: #EBEBEB;
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: small;
+}
+.footer .subscribe__btn {
+  border: 1px solid #009688;
+  background-color: #FF794E;
+  color: #EBEBEB;
+  border-radius: 20px !important;
+  margin-left: -20px !important;
+  font-size: 14px;
+  padding: 0 2rem 0 2rem;
+}
+.footer .subscribe__btn:hover {
+  border: 1px solid #009688;
+  background-color: #FF794E;
+  color: #EBEBEB;
+  border-radius: 20px;
+}
+.footer .subscribe__btn:focus {
+  border: 1px solid #009688;
+  background-color: #FF794E !important;
+  color: #EBEBEB;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .footer__info {
+    text-align: center;
+  }
+  .footer__socials {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .footer__subscription {
+    order: 3;
+  }
+  .footer__socials {
+    order: 3;
+  }
+  .footer__subscription h5 {
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=Footer.css.map */
