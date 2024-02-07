@@ -1,0 +1,44 @@
+@import "../Variables/Variables.scss";
+
+
+.donate {
+    padding: 4rem 0 10rem 0;
+    background: url(../src/assets//GirlChild.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+
+    &__text {
+        text-align: center;
+        color: $color_5;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0.02px;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1rem 0;
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 14rem;
+    }
+
+    &__cta {
+        @include buttonStyle($background-color_3, $color_6, 24px, 500)
+    }
+
+
+}

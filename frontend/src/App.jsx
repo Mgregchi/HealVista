@@ -4,7 +4,8 @@ import {
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 import { Login, SignUp, LandingPage, Dashboard, ErrorPage } from "./routes";
 
 import { DashboardLayout, RootLayout } from "./layouts";

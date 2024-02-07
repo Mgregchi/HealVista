@@ -1,0 +1,68 @@
+.header {
+  background: #F5F5F5;
+  padding: 20px 0;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  border-bottom: 0.1px solid black;
+  display: flex;
+}
+.header .navbar-toggler {
+  color: #33ABA0;
+  border: none;
+}
+.header .navbar-toggler:focus {
+  box-shadow: none;
+}
+.header .navbar__collapse {
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header__menu {
+  gap: 3rem;
+  color: black;
+}
+.header .header__menu__link {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  transition: border-bottom 0.5s ease;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-family: "Roboto";
+}
+.header .btn__in {
+  background-color: white;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #FF794E;
+  font-size: 1rem;
+  color: #FF794E;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.header .btn__in:hover {
+  background-color: #FF794E;
+  color: #EBEBEB;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .header .header__menu {
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .header .btn__cta {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .header .btn__signup {
+    order: 1;
+  }
+}/*# sourceMappingURL=NavBar.css.map */
