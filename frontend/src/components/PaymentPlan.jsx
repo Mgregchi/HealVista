@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Calendar from "../assets/Calendar.svg";
 import Clock from "../assets/Clock.svg";
-import PaymentCards from "./paymentCards";
+import PaymentCards from "./PaymentCards";
 
 //Styles
 import "../styles/PaymentPlan.css";

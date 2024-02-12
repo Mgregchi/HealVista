@@ -1,0 +1,72 @@
+.choose-us {
+  // Colors
+  $green: #009688;
+  $black: #333333;
+
+  display: flex;
+  padding: 100px 0;
+
+  &__left-content {
+    position: relative;
+    flex: 0.5;
+
+    .top-image {
+      background-image: url("../assets/why-us-img1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 382px;
+      height: 392px;
+      border-radius: 20px;
+      z-index: 2;
+      position: absolute;
+      top: 0px;
+      left: 20px;
+    }
+
+    .bottom-image {
+      background-image: url("../assets/why-us-img2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 302px;
+      height: 289px;
+      border-radius: 20px;
+      z-index: 3;
+      position: absolute;
+      top: 350px;
+      left: 191px;
+    }
+  }
+
+  &__right-content {
+    flex: 0.5;
+    z-index: 3;
+
+    .title {
+      color: $green;
+      font-family: Roboto;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.0015em;
+    }
+
+    .subtitle {
+      font-family: Roboto;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: -0.02em;
+      width: 403px;
+    }
+  }
+
+  .services-list {
+    display: flex;
+    gap: 50px;
+    
+    &__container1,
+    &__container2 {
+      display: block;
+    }
+  }
+}

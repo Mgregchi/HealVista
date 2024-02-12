@@ -1,5 +1,6 @@
 import "../styles/Services.scss";
 import ServicesCards from "./services/ServicesCards";
+import WhyChooseUs from "./services/WhyChooseUs";
 
 function Services() {
   return (
@@ -11,6 +12,7 @@ function Services() {
         </h2>
       </div>
       <ServicesCards />
+      <WhyChooseUs/>
       <div className="services__bg-overlay"></div>
     </div>
   );

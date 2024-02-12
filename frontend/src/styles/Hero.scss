@@ -1,13 +1,14 @@
 @import "../Variables/Variables.scss";
 
 .hero {
-  height: 100vh;
-  position: relative;
-  background-image: url(../src/assets/hero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: auto;
+    height: 100vh;
+    position: relative;
+    background-image: url(../src/assets/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 4.875rem;
 
   &__text {
     color: $color_7;

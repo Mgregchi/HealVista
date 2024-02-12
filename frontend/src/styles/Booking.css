@@ -45,13 +45,13 @@
 .booking__line {
   position: absolute;
   z-index: 1;
-  top: 26.5rem;
-  left: 24rem;
+  top: 26rem !important;
+  left: 24rem !important;
 }
 .booking__line2 {
   position: absolute;
-  bottom: 4rem;
-  right: 29.3rem;
+  bottom: 4rem !important;
+  right: 29.3rem !important;
 }
 
 @media (max-width: 768px) {
@@ -91,23 +91,23 @@
     display: none;
   }
 }
-@media screen and (min-width: 1024px) and (min-height: 600px) {
+@media screen and (min-width: 1024px) and (min-height: 500px) and (max-width: 1100px) {
   .booking__line {
-    top: 25rem;
-    left: 18rem;
+    top: 25rem !important;
+    left: 18rem !important;
   }
   .booking__line2 {
-    bottom: 5.5rem;
-    right: 20rem;
+    bottom: 5.5rem !important;
+    right: 21rem !important;
   }
 }
-@media screen and (min-width: 1280px) and (min-height: 800px) {
+@media screen and (min-width: 1280px) and (min-height: 800px) and (max-width: 1300px) {
   .booking__line {
     top: 26rem;
-    left: 21rem;
+    left: 21rem !important;
   }
   .booking__line2 {
     bottom: 4rem;
-    right: 27rem;
+    right: 27rem !important;
   }
 }/*# sourceMappingURL=Booking.css.map */
