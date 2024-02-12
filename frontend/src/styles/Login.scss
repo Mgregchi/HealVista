@@ -1,0 +1,133 @@
+@import "../Variables/Variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.login-wrapper {
+  // display: flex;
+  width: 1440px !important;
+  height: 944px !important;
+  background-color: $border-color_1;
+  margin-block: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-end: 30px;
+
+  .login-wrapper__card {
+    box-shadow: -8px 4px 5px 0px rgba(0, 0, 0, 0.24);
+    margin-top: 30px;
+    width: 480px !important;
+    height: 796px !important;
+    top: 114px;
+    left: 900px;
+    padding: 97px 40px 74px 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(172, 167, 167, 0.6);
+
+    border-radius: 20px;
+
+    background: rgba(0, 150, 136, 0.73);
+
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+  }
+
+  // .login-wrapper__card::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 302px;
+  //   height: 302px;
+  //   border-radius: 100%;
+  //   background-image: linear-gradient(180deg, rgba(0, 63, 57), rgb(52, 105, 101));
+  //   top: -30px;
+  //   left: -122px;
+  // }
+}
+
+.input {
+  background-color: transparent;
+  border-radius: 12px !important;
+  color: white !important;
+}
+.label,
+h1,
+p,
+span {
+  color: white !important;
+  background-color: none;
+}
+
+.input:focus {
+  background-color: transparent !important;
+}
+
+.submit {
+  display: block;
+  background-color: $background-color_3;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: -8px 4px 20px 0 rgba($color_2, 0.25);
+  border: none;
+}
+
+.input,
+.submit {
+  font-size: 20px;
+}
+.addInfo {
+  font-family: 16px;
+}
+
+.submit:hover, .submit:active {
+  background: $background-color_3 !important;
+  transform: translateY(-3px);
+}
+
+
+.headShot__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 689px !important;
+  height: 944px !important;
+  background-color: #003f39;
+}
+
+.background-decor {
+  width: 751px;
+  height: 944px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 69%;
+  top: 72%;
+  // border: 5px solid red;
+}
+
+.background-decor .shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape:first-child {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(180deg, rgba(0, 63, 57), rgb(52, 105, 101));
+  left: 84px;
+  top: 87px;
+}
+
+.shape:last-child {
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(180deg, rgba(0, 63, 57), rgb(52, 105, 101));
+  right: 36px;
+  bottom: -30px;
+}
+
+@media screen and (max-width: 992px) {
+  .background-decor {
+    display: none;
+  }
+}
