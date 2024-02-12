@@ -1,4 +1,4 @@
-// import login-headshot2.svg from "./asserts";
+import '/dist/Avater.css';
 
 const Avater = () => {
   return (

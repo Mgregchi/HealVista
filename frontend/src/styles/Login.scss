@@ -4,7 +4,7 @@
 .login-wrapper {
   // display: flex;
   width: 1440px !important;
-  height: 944px !important;
+  // height: 944px !important;
   background-color: $border-color_1;
   margin-block: 50px;
   font-family: "Roboto", sans-serif;
@@ -80,19 +80,25 @@ span {
   font-family: 16px;
 }
 
-.submit:hover, .submit:active {
+.submit:hover,
+.submit:active {
   background: $background-color_3 !important;
   transform: translateY(-3px);
 }
 
-
 .headShot__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 689px !important;
   height: 944px !important;
   background-color: #003f39;
+
+  h1 {
+    font-size: 72px;
+    font-stretch: ultra-condensed;
+  }
 }
 
 .background-decor {
@@ -126,8 +132,18 @@ span {
   bottom: -30px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 896px) {
   .background-decor {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headShot__wrapper, .login-wrapper__card {
+    display: block;
+    margin-inline: auto;
+  }
+  .row{
+    flex-direction: column;
   }
 }
