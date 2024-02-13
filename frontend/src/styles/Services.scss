@@ -17,9 +17,14 @@
       font-family: Roboto;
       font-size: 1.5rem;
       font-weight: 600;
-      line-height: 24px;
+      line-height: 1.5rem;
       letter-spacing: 0.0015em;
       text-align: center;
+
+      @media only screen and (max-width: 720px) {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
     }
 
     &__subtitle {
@@ -31,15 +36,26 @@
       margin: 0px auto;
       width: 587px;
       text-align: center;
+
+      @media only screen and (max-width: 720px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 100%;
+      }
     }
   }
 
   //   Services Cards Style
   &__cards__container {
     margin-top: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     z-index: 1;
+
+    @media only screen and (max-width: 720px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .services__card {
       width: 193.1px;

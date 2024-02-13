@@ -27,6 +27,10 @@ const WhyChooseUs = () => {
               <li className="services-list__item">Insurance Coverage</li>
             </div>
           </ul>
+
+          <button className="choose-us__button">
+            <p>Know More</p>
+          </button>
         </div>
       </div>
     </section>

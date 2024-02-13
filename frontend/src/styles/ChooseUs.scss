@@ -69,4 +69,19 @@
       display: block;
     }
   }
+
+  &__button {
+    background: #FF5722;
+    border-radius: 1rem;
+    padding: 1rem 4rem;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0px;
+    }
+  }
 }
