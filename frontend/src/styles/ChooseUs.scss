@@ -5,10 +5,31 @@
 
   display: flex;
   padding: 100px 0;
+  @media only screen and (max-width: 720px) {
+    padding: 50px 1rem;
+  }
 
   &__left-content {
     position: relative;
     flex: 0.5;
+    @media only screen and (max-width: 720px) {
+      display: none;
+    }
+
+    .lines-group-1 {
+      @media only screen and (max-width: 720px) {
+        display: none;
+      }
+    }
+
+    .lines-group-2 {
+      position: absolute;
+      top: 600px;
+      right: 50px;
+      @media only screen and (max-width: 720px) {
+        display: none;
+      }
+    }
 
     .top-image {
       background-image: url("../assets/why-us-img1.png");
@@ -40,6 +61,15 @@
   &__right-content {
     flex: 0.5;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+
+    @media only screen and (max-width: 720px) {
+      flex: 1;
+      align-items: center;
+    }
 
     .title {
       color: $green;
@@ -48,6 +78,11 @@
       font-weight: 600;
       line-height: 24px;
       letter-spacing: 0.0015em;
+      @media only screen and (max-width: 720px) {
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+      }
     }
 
     .subtitle {
@@ -57,13 +92,37 @@
       line-height: 50px;
       letter-spacing: -0.02em;
       width: 403px;
+
+      @media only screen and (max-width: 720px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 70%;
+        text-align: center;
+        margin: 0px auto;
+      }
+    }
+
+    .user-number {
+      position: absolute;
+      bottom: 0;
+
+      @media only screen and (max-width: 720px) {
+        display: none;
+      }
     }
   }
 
   .services-list {
     display: flex;
     gap: 50px;
-    
+
+    @media only screen and (max-width: 720px) {
+      flex-direction: column;
+      gap: 0px;
+      padding-left: 50px;
+      width: 100%;
+    }
+
     &__container1,
     &__container2 {
       display: block;
@@ -71,17 +130,27 @@
   }
 
   &__button {
-    background: #FF5722;
+    background: #ff5722;
     border-radius: 1rem;
     padding: 1rem 4rem;
     color: #ffffff;
     border: none;
     display: flex;
     align-items: center;
+    gap: 10px;
+
+    @media only screen and (max-width: 720px) {
+      padding: 0.5rem 2rem;
+    }
 
     p {
       font-size: 1.2rem;
       margin-bottom: 0px;
     }
+  }
+
+  &__button-icon {
+    width: 1rem;
+    height: 1rem;
   }
 }

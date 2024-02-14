@@ -10,6 +10,11 @@
   align-items: center;
   position: relative;
 
+  @media only screen and (max-width: 720px) {
+    background: #cffffb80;
+    padding: 200px 0 0 0;
+  }
+
   //   Heading Styles
   &__heading {
     &__title {
@@ -40,7 +45,7 @@
       @media only screen and (max-width: 720px) {
         font-size: 1.5rem;
         line-height: 2rem;
-        width: 100%;
+        width: 70%;
       }
     }
   }
@@ -65,6 +70,12 @@
       display: grid;
       place-items: center;
 
+      @media only screen and (max-width: 720px) {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+      }
+
       &__container {
         display: flex;
         flex-direction: column;
@@ -85,6 +96,11 @@
         background-color: #ffffff;
         display: grid;
         place-items: center;
+
+        @media only screen and (max-width: 720px) {
+          width: 70px;
+          height: 70px;
+        }
       }
 
       &__icon {
@@ -102,5 +118,34 @@
     position: absolute;
     top: 450px;
     z-index: 0;
+
+    @media only screen and (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  .custom-shape-divider-top-1707922753 {
+    position: absolute;
+    top: 950px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    @media only screen and (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  .custom-shape-divider-top-1707922753 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 350px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1707922753 .shape-fill {
+    fill: #cffffb80;
   }
 }

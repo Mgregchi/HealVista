@@ -1,4 +1,8 @@
+import { FaArrowRight } from "react-icons/fa";
+import LinesGroup from "../../assets/lines-group.png";
+import UserNumbers from "../../assets/user-numbers.png";
 import "../../styles/ChooseUs.scss";
+
 const WhyChooseUs = () => {
   return (
     <section style={{ width: "100%" }}>
@@ -6,6 +10,8 @@ const WhyChooseUs = () => {
         <div className="choose-us__left-content">
           <div className="top-image"></div>
           <div className="bottom-image"></div>
+          <img src={LinesGroup} alt="" className="lines-group-1" />
+          <img src={LinesGroup} alt="" className="lines-group-2" />
         </div>
         <div className="choose-us__right-content">
           <h5 className="title">WHY CHOOSE US</h5>
@@ -30,7 +36,10 @@ const WhyChooseUs = () => {
 
           <button className="choose-us__button">
             <p>Know More</p>
+            <FaArrowRight className="choose-us__button-icon" />
           </button>
+
+          <img src={UserNumbers} alt="" className="user-number" />
         </div>
       </div>
     </section>
