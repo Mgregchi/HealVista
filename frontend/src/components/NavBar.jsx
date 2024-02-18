@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import logo from "../assets/Logo component.svg";
 import Cta from "./CTA";
 import { useState } from "react";
+import { Link as RLink } from "react-router-dom";
 
 //Styles
 import "../styles/NavBar.css";
@@ -18,12 +19,24 @@ const NavBar = () => {
     setExpanded(!expanded);
   };
 
+  const handleLinkClick = () => {
+    setExpanded(false);
+  };
+
   return (
-    <Navbar collapseOnSelect expand="lg" className="header" expanded={expanded}>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className="header"
+      expanded={expanded}
+      fixed="top"
+    >
       <Container>
-        <Navbar.Brand href="#home" className="header__logo">
-          <img src={logo} alt="logo" />
-        </Navbar.Brand>
+        <RLink to="/">
+          <Navbar.Brand href="#home" className="header__logo">
+            <img src={logo} alt="logo" />
+          </Navbar.Brand>
+        </RLink>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="header__toggle"
@@ -36,21 +49,55 @@ const NavBar = () => {
           id="responsive-navbar-nav"
           className="navbar__collapse"
         >
-          <Nav className="ml-auto header__menu">
-            <Link to="home" className="header__menu__link">
+          <Nav className="ml-auto header__menu ms-auto">
+            <Link
+              to="hero"
+              className="header__menu__link"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={handleLinkClick}
+            >
               Home
             </Link>
-            <Link to="about" className="header__menu__link">
+            <Link
+              to="services"
+              className="header__menu__link"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              onClick={handleLinkClick}
+            >
               Services
             </Link>
-            <Link to="skills" className="header__menu__link">
+            <Link
+              to="payment__plan"
+              className="header__menu__link"
+              spy={true}
+              smooth={true}
+              offset={-5}
+              duration={500}
+              onClick={handleLinkClick}
+            >
               Packages
             </Link>
-            <Link to="contact" className="header__menu__link">
+            <Link
+              to="footer"
+              className="header__menu__link"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={handleLinkClick}
+            >
               Contact
             </Link>
           </Nav>
-          <Cta />
+          <Nav className="ms-auto">
+            <Cta />
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
