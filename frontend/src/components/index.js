@@ -7,6 +7,7 @@ import NewsLetterForm from "./NewsLetterForm";
 import HeroCard from "./HeroCard";
 import Donate from "./Donate";
 import Booking from "./Booking";
+import Services from "./Services"
 
 export {
   NavBar,
@@ -18,4 +19,5 @@ export {
   Donate,
   NewsLetterForm,
   Booking,
+  Services,
 };

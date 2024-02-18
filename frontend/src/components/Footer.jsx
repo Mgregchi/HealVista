@@ -5,7 +5,6 @@ import NewsLetterForm from "./NewsLetterForm";
 //Styles
 import "../styles/Footer.css";
 
-
 const Footer = () => {
   return (
     <footer className="footer" id="footer">

@@ -1,5 +1,4 @@
-// import { Link } from "react-scroll";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Cta = () => {
   return (
@@ -9,20 +8,15 @@ const Cta = () => {
           type="button"
           value="Input"
           size="md"
-          // onClick={() => console.log("Connect")}
           className=" btn__in btn__signup"
         >
-          Sign Up
+          Signup
         </button>
-      </Link>{" "}
+      </Link>
       <Link to="./Login">
-        <button
-          size="md"
-          // onClick={() => console.log("Connect")}
-          className=" btn__in "
-        >
+        <button size="md" className=" btn__in ">
           Login
-        </button>{" "}
+        </button>
       </Link>
     </div>
   );
