@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import logo from "../assets/Logo component.svg";
 import Cta from "./CTA";
 import { useState } from "react";
+import { Link as RLink } from "react-router-dom";
 
 //Styles
 import "../styles/NavBar.css";
@@ -31,9 +32,11 @@ const NavBar = () => {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#home" className="header__logo">
-          <img src={logo} alt="logo" />
-        </Navbar.Brand>
+        <RLink to="/">
+          <Navbar.Brand href="#home" className="header__logo">
+            <img src={logo} alt="logo" />
+          </Navbar.Brand>
+        </RLink>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="header__toggle"
@@ -63,7 +66,7 @@ const NavBar = () => {
               className="header__menu__link"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-10}
               duration={500}
               onClick={handleLinkClick}
             >
