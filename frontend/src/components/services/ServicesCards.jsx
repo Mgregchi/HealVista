@@ -15,7 +15,7 @@ const ServicesCards = () => {
   return (
     <div className="services__cards__container">
       {services.map((service) => (
-        <ServiceCard service={service} />
+        <ServiceCard key={service.title} service={service} />
       ))}
     </div>
   );
