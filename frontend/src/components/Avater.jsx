@@ -9,4 +9,4 @@ const Avater = () => {
 };
 
 export default Avater;
-//standout
+

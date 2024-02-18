@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@500&family=Oxanium&family=Roboto:wght@300;400;500;700&display=swap");
+.booking {
+  padding: 4rem 0 4rem 0;
+  position: relative;
+}
+.booking__heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: #009688;
+  margin-bottom: 2rem;
+}
+.booking__title {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.booking__text {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 6rem;
+}
+.booking__cta {
+  position: relative;
+  z-index: 2;
+  padding: 0.6rem 3.5rem;
+  background: #FF5722;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.booking__cta a {
+  color: #FFEEE9;
+  font-weight: 400;
+  letter-spacing: 0.032px;
+  text-decoration: none;
+}
+.booking__line {
+  position: absolute;
+  z-index: 1;
+  top: 26.5rem;
+  left: 24rem;
+}
+.booking__line2 {
+  position: absolute;
+  bottom: 4rem;
+  right: 29.3rem;
+}
+
+@media (max-width: 768px) {
+  .booking__row {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .booking__image {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+  .booking__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .booking__text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+  .booking__text br {
+    display: none;
+  }
+  .booking__cta {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .booking__line {
+    display: none;
+  }
+  .booking__line2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+  .booking__line {
+    top: 25rem;
+    left: 18rem;
+  }
+  .booking__line2 {
+    bottom: 5.5rem;
+    right: 20rem;
+  }
+}
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+  .booking__line {
+    top: 26rem;
+    left: 21rem;
+  }
+  .booking__line2 {
+    bottom: 4rem;
+    right: 27rem;
+  }
+}/*# sourceMappingURL=Booking.css.map */

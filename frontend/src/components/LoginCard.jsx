@@ -28,10 +28,10 @@ function LoginCard() {
         <span className='icon'><img src='src/assets/bi_github.svg' alt='Github'></img></span>
       </div>
       <div className='text-center mt-5 pt-5'>
-        <p className='addInfo'>Don’t have an account ? Signup</p>
-        <p className='addInfo'>
+        <p className='addInfo'>Don’t have an account? Signup</p>
+        <p className='addInfo text-center'>
           <span>Terms & Conditions</span>
-          <span className='mx-4'>Support</span>
+          <span className='mx-3'>Support</span>
           <span>Customer Care</span>
         </p>
       </div>
